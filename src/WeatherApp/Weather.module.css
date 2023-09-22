@@ -1,18 +1,85 @@
-/* Float four columns side by side */
-.column {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.card {
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+    border-radius: 25px;
+    box-sizing: border-box;
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.2);
+    position:inherit;
+    text-align: center;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;;
+
 }
 
-.row {margin: 0 -5px;}
+.inputEnterCity  {
+    box-sizing: border-box;
+    width:75%;
+    border-radius: 15px;
+    padding:15px;
+    border-color: transparent;
+}
 
-/* Style the counter cards */
-.card {
-    background-color: black;
-    border-radius: 0.25rem;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+.rowCard:after {
+    padding-top: 40px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.cardinCol1 {
+    padding-top: 40px;
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 600px) {
+    .cardinCol1 {
+        width: 100%;
+    }
+}
+
+
+.cardinCol2 {
+    padding-top: 40px;
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 600px) {
+    .cardinCol2 {
+        width: 100%;
+    }
+}
+
+
+.cardinCol3 {
+    padding-top: 40px;
+    float: left;
+    width: 33.33%;
+}
+
+@media screen and (max-width: 600px) {
+    .cardinCol3 {
+        width: 100%;
+    }
+}
+
+
+.row {
+    padding-top: 50px;
+}
+
+.card .body {
+    padding: 1rem 1.25rem;
+}
+
+.col {
+    justify-content: center;
+    display: grid;
+    align-content: center;
+}
+.card .header {
+    border-bottom: 1px solid #cccccc;
+    padding: 1rem 1.25rem;
 }
