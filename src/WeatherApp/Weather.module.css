@@ -9,7 +9,19 @@
     padding: 10px;
     margin-right: auto;
     margin-left: auto;;
+    height: fit-content;
+    width: 100%;
 
+}
+
+.searchIcon {
+    padding: 15px;
+    border: 1px solid grey;
+    float: right;
+    background: #f1f1f1;
+    border-radius: 40px;
+    align-items: center;
+    cursor: pointer;
 }
 
 .inputEnterCity  {
@@ -40,10 +52,11 @@
 }
 
 
-.cardinCol2 {
+.temp {
     padding-top: 40px;
     float: left;
     width: 33.33%;
+    font-size: 1.5rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -53,7 +66,7 @@
 }
 
 
-.cardinCol3 {
+.description {
     padding-top: 40px;
     float: left;
     width: 33.33%;
@@ -74,10 +87,18 @@
     padding: 1rem 1.25rem;
 }
 
+.columnProp {
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-span: all;
+
+}
+
 .col {
     justify-content: center;
     display: grid;
     align-content: center;
+    column-count: 3;
 }
 .card .header {
     border-bottom: 1px solid #cccccc;
